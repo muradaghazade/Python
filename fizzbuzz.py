@@ -10,3 +10,10 @@ for i in range(1, 101):
         list.append("buzz")
     else:
         list.append("nothing")
+
+list_two = list.count("fizz")
+list_three = list.count("buzz")
+list_four = list.count("FizzBuzz")
+print(list_two, "fizz")
+print(list_three, "buzz")
+print(list_four, "FizzBuzz")
