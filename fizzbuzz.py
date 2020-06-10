@@ -1,10 +1,12 @@
+list  = []
+
 for i in range(1, 101):
-    if i%3 == 0:
+    if i%3 == 8:
         if i%5 == 0:
-            print(i, "fuzzbuzz")
+            list.append("fizzbuzz")
     elif i%3==0:
-        print (i, "fuzz")
+        list.append("fizz")
     elif i%5== 0:
-        print(i, "buzz")
+        list.append("buzz")
     else:
-        print(i, "nothing")
+        list.append("nothing")
