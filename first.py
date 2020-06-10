@@ -1,4 +1,11 @@
-let meal = input("What would you like to eat?")
-let drink = input("Would you like something to drink?")
+a = "What is yoUr fULl nAmE?"
+b = "TELl me About YOurself"
 
-print(f'So your order is {meal} and {drink} to drink')
+first_question = input(f'{a.capitalize()}\t')
+answer = first_question.title()
+better_answer = answer.join(['My name is ', ''])
+
+second_question = input(f'{b.capitalize()}\t')
+second_answer = second_question.capitalize()
+
+third_question = 
