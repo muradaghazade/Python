@@ -1,14 +1,15 @@
 list  = []
 
 for i in range(1, 101):
-    if i%3 ==0 :
-        if i%5 == 0:
-            list.append("fizzbuzz")
-            else:
-                list.append("fizz")
-        list.append("buzz")
+    if i%3==0:
+        if i%5==0:
+            list.append('FizzBuzz')
+        else:
+            list.append('Fizz')
+    elif i%5==0:
+        list.append('Buzz')
     else:
-        list.append("nothing")
+        list.append('Nothing')
 
 list_two = list.count("fizz")
 list_three = list.count("buzz")
