@@ -1,6 +1,6 @@
 import random
 
-list = ['Rock', 'Scissors', 'Paper']
+list = ["Rock", "Scissors", "Paper"]
 
 games = 0
 human = 0
@@ -17,22 +17,22 @@ while True:
 
         if comp_choice == "Scissors" and b == "Rock":
             human+=1
-            print(f' Human choice: {b}\n Computer choice: {comp_choice}\n Human wins!\n Games played: {games} Human: {human} Computer: {comp} Tie: {tie}')
+            print(f' Your choice: {b}\n Computer choice: {comp_choice}\n Human wins!\n Games played: {games} Human: {human} Computer: {comp} Tie: {tie}')
         elif comp_choice == "Paper" and b == "Scissors":
             human+=1
-            print(f' Human choice: {b}\n Computer choice: {comp_choice}\n Human wins!\n Games played: {games} Human: {human} Computer: {comp} Tie: {tie}')
+            print(f' Your choice: {b}\n Computer choice: {comp_choice}\n Human wins!\n Games played: {games} Human: {human} Computer: {comp} Tie: {tie}')
         elif comp_choice == "Rock" and b == "Paper":
             human+=1
-            print(f' Human choice: {b}\n Computer choice: {comp_choice}\n Human wins!\n Games played: {games} Human: {human} Computer: {comp} Tie: {tie}') 
+            print(f' Your choice: {b}\n Computer choice: {comp_choice}\n Human wins!\n Games played: {games} Human: {human} Computer: {comp} Tie: {tie}') 
         elif comp_choice == b:
             tie+=1
-            print(f' Human choice: {b}\n Computer choice: {comp_choice}\n Tie!\n Games played: {games} Human: {human} Computer: {comp} Tie: {tie}')
+            print(f' Your choice: {b}\n Computer choice: {comp_choice}\n Tie!\n Games played: {games} Human: {human} Computer: {comp} Tie: {tie}')
         elif b != "Rock" and b != "Scissors" and b != "Paper":
             print("Do not cheat!\a")
         else:
             comp+=1
-            print(f' H2uman choice: {b}\n Computer choice: {comp_choice}\n Computer wins!\n Games played: {games} Human: {human} Computer: {comp} Tie: {tie}')
+            print(f' Your choice: {b}\n Computer choice: {comp_choice}\n Computer wins!\n Games played: {games} Human: {human} Computer: {comp} Tie: {tie}')
             
     else:
-        print("Bye babe")
+        print("Your choice: Exit.\nBye!")
         break
