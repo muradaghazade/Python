@@ -28,7 +28,7 @@ while True:
             tie+=1
             print(f' Human choice: {b}\n Computer choice: {comp_choice}\n Tie!\n Games played: {games} Human: {human} Computer: {comp} Tie: {tie}')
         elif b != "Rock" and b != "Scissors" and b != "Paper":
-            print("Do not cheat!")
+            print("Do not cheat!\a")
         else:
             comp+=1
             print(f' H2uman choice: {b}\n Computer choice: {comp_choice}\n Computer wins!\n Games played: {games} Human: {human} Computer: {comp} Tie: {tie}')
