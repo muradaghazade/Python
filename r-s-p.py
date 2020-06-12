@@ -7,9 +7,10 @@ human = 0
 comp = 0
 tie = 0
 
-comp_choice = random.choice(list)
+
 
 while True:
+    comp_choice = random.choice(list)
     a = input("Type your choice:\t")
     if a != "q":
         b = a.capitalize()
