@@ -16,6 +16,7 @@ while True:
             d = {key:value for value, key in d.items()}
         else:
             print(f'Word not found.')
+            d = {key:value for value, key in d.items()}
     elif desicion == lang_one:
         
         d = {value:key for key, value in d.items()}
