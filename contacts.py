@@ -5,14 +5,14 @@ def contact_shower(cotact_name):
 
 def contact_creator(a):
     if a == 'yes':
-        phone = int(input('Please enter the phone number: '))
+        phone = int(input('Enter the phone number: '))
         contacts[n] = phone
         contact_shower(n)
     else:
         print('New contact is not added.')
 
 while True:
-    name = input('Type whose phone number you want to see: ')
+    name = input('Enter the name: ')
     n = name.capitalize()
     if n in contacts.keys():
         contact_shower(n)
@@ -20,7 +20,7 @@ while True:
         print('Exiting program')
         break
     else:
-        question = input('Do you want to add this person\'s number? ')
+        question = input('Do you want to add this person to contacts? ')
         answer = question.lower()
         contact_creator(answer)
 
