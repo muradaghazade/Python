@@ -3,11 +3,14 @@ contacts = {'Fidan':584758475, 'Rafik':8957689576, 'Sabina':65876584554, 'Samir'
 def contact_shower(cotact_name):
     print(f'{cotact_name}\'s phone number is {contacts[cotact_name]}')
 
+def new_contact_shower(cotact_name):
+    print(f'{cotact_name} is added to contacts.')
+
 def contact_creator(a):
-    if a == 'yes':
+    if a == 'Yes':
         phone = int(input('Enter the phone number: '))
         contacts[n] = phone
-        contact_shower(n)
+        new_contact_shower(n)
     else:
         print('New contact is not added.')
 
@@ -21,8 +24,9 @@ while True:
         break
     else:
         question = input('Do you want to add this person to contacts? ')
-        answer = question.lower()
+        answer = question.capitalize()
         contact_creator(answer)
 
+print(f'All your contacts:')
 for k, v in contacts.items():
-    print(k, v)
+    print(f'{k}:{v}')
